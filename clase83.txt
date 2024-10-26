@@ -1,0 +1,35 @@
+import java.io.BufferedReader
+import java.io.BufferedWriter
+import java.io.InputStreamReader
+import java.io.OutputStreamWriter
+
+fun main() {
+    val input = BufferedReader(InputStreamReader(System.`in`))
+    val mensaje = input.readLine()
+
+    val output = BufferedWriter(OutputStreamWriter(System.out))
+    output.write(mensaje.uppercase())
+    output.flush()
+}
+
+
+////////////////
+
+import java.io.BufferedReader
+import java.io.BufferedWriter
+import java.io.InputStreamReader
+import java.io.OutputStreamWriter
+
+fun main() {
+    val proceso = ProcessBuilder("C:\\Program Files\\Java\\jdk-17\\bin\\java.exe\" \"-javaagent:C:\\Program Files\\JetBrains\\IntelliJ IDEA Community Edition 2022.2.1\\lib\\idea_rt.jar=56886:C:\\Program Files\\JetBrains\\IntelliJ IDEA Community Edition 2022.2.1\\bin\" -Dfile.encoding=UTF-8 -classpath C:\\Users\\PROFESOR\\IdeaProjects\\arrancarproceso\\out\\production\\arrancarproceso;C:\\Users\\PROFESOR\\.m2\\repository\\org\\jetbrains\\kotlin\\kotlin-stdlib-jdk8\\1.7.10\\kotlin-stdlib-jdk8-1.7.10.jar;C:\\Users\\PROFESOR\\.m2\\repository\\org\\jetbrains\\kotlin\\kotlin-stdlib\\1.7.10\\kotlin-stdlib-1.7.10.jar;C:\\Users\\PROFESOR\\.m2\\repository\\org\\jetbrains\\kotlin\\kotlin-stdlib-common\\1.7.10\\kotlin-stdlib-common-1.7.10.jar;C:\\Users\\PROFESOR\\.m2\\repository\\org\\jetbrains\\annotations\\13.0\\annotations-13.0.jar;C:\\Users\\PROFESOR\\.m2\\repository\\org\\jetbrains\\kotlin\\kotlin-stdlib-jdk7\\1.7.10\\kotlin-stdlib-jdk7-1.7.10.jar HijoKt")
+
+    val hijo = proceso.start()
+
+    val output = BufferedWriter(OutputStreamWriter(hijo.outputStream))
+    output.write("hola hijo\n")
+    output.flush()
+
+    val input = BufferedReader(InputStreamReader(hijo.inputStream))
+    val mensaje = input.readLine()
+    println(mensaje)
+}
