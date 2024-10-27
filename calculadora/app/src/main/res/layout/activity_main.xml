@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F0F0F0"
+    android:gravity="center">
+
+    <!-- Campo de entrada para el primer número -->
+    <EditText
+        android:id="@+id/editNumero1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Número 1"
+        android:inputType="numberDecimal"
+        android:padding="10dp"
+        android:background="#FFFFFF"
+        android:textColorHint="#888888" />
+
+    <!-- Campo de entrada para el segundo número -->
+    <EditText
+        android:id="@+id/editNumero2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Número 2"
+        android:inputType="numberDecimal"
+        android:padding="10dp"
+        android:background="#FFFFFF"
+        android:textColorHint="#888888" />
+
+    <!-- Texto para mostrar el resultado -->
+    <TextView
+        android:id="@+id/textResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resultado: "
+        android:textSize="18sp"
+        android:textColor="#333333"
+        android:paddingTop="16dp" />
+
+    <!-- Botones para operaciones -->
+    <Button
+        android:id="@+id/buttonSuma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Suma"
+        android:background="#6200EE"
+        android:textColor="#FFFFFF"
+        android:padding="12dp"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/buttonResta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resta"
+        android:background="#6200EE"
+        android:textColor="#FFFFFF"
+        android:padding="12dp"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/buttonMultiplicar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Multiplicar"
+        android:background="#6200EE"
+        android:textColor="#FFFFFF"
+        android:padding="12dp"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/buttonDividir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dividir"
+        android:background="#6200EE"
+        android:textColor="#FFFFFF"
+        android:padding="12dp"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/buttonPotencia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Potencia"
+        android:background="#6200EE"
+        android:textColor="#FFFFFF"
+        android:padding="12dp"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/buttonModulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Módulo"
+        android:background="#6200EE"
+        android:textColor="#FFFFFF"
+        android:padding="12dp"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/buttonPromedio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Promedio"
+        android:background="#6200EE"
+        android:textColor="#FFFFFF"
+        android:padding="12dp"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/buttonMaximo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Máximo"
+        android:background="#6200EE"
+        android:textColor="#FFFFFF"
+        android:padding="12dp"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/buttonMinimo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mínimo"
+        android:background="#6200EE"
+        android:textColor="#FFFFFF"
+        android:padding="12dp"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/buttonDiferenciaAbsoluta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Diferencia Absoluta"
+        android:background="#6200EE"
+        android:textColor="#FFFFFF"
+        android:padding="12dp"
+        android:layout_marginTop="8dp"/>
+</LinearLayout>
+
